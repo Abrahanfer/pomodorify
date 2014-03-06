@@ -1,4 +1,4 @@
 pomodorify
 ==========
 
-A Andorid Pomodoro timer
+An Andorid Pomodoro timer
