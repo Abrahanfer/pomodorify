@@ -10,7 +10,6 @@ import android.app.FragmentTransaction;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,6 +41,8 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
+
+        if (actionBar == null) throw new AssertionError();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
         // Create the adapter that will return a fragment for each of the three
